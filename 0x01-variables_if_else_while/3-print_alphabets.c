@@ -18,11 +18,11 @@ int main(void)
 
 	for (i = 0 ; i < n; i++)
 	{
-		putchar(alphabet[i]);
+		putchar(alphabet_low[i]);
 	};
 	for (i = 0 ; i < m; i++)
 	{
-		putchar(alphabet[i]);
+		putchar(alphabet_upp[i]);
 	}
 	putchar('\n');
 	return (0);
