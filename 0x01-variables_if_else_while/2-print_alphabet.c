@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-	char alphabet[] = "abcdefghigklmnopqrstuvwz";
+	char alphabet[] = "abcdefghigklmnopqrstuvwxyz";
 	int n = sizeof(alphabet) - 1;
 	int i;
 
