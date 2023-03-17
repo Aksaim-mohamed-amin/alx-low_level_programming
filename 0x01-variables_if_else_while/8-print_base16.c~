@@ -4,18 +4,17 @@
 /**
  * main - Entry piont
  *
- * Description: 'print the alphabit in lowercase using putchar'
+ * Description: 'print all the single digit nubers of base 10'
  *
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	char letter = 'a';
-	char stop = 'z';
+	int i;
 
-	for (; letter <= stop; letter++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(letter);
+		putchar('0' + i);
 	}
 	putchar('\n');
 	return (0);
