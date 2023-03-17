@@ -11,8 +11,9 @@
 int main(void)
 {
 	char alphabet[] = "abcdefghigklmnopqrstuvwz";
+	int i;
 
-	for (int i = 0; i < sizeof(alphabet) - 1; i++)
+	for (i = 0 ; i < sizeof(alphabet) - 1; i++)
 	{
 		putchar(alphabet[i]);
 	}
