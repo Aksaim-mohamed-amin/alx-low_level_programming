@@ -13,11 +13,11 @@ int main(void)
 	char low_letter = 'a';
 	char upp_letter = 'A';
 
-	for (low_letter; low_letter <= 'z'; low_letter++)
+	for (; low_letter <= 'z'; low_letter++)
 	{
 		putchar(low_letter);
 	};
-	for (upp_letter; upp_letter <= 'Z'; upp_letter++)
+	for (; upp_letter <= 'Z'; upp_letter++)
 	{
 		putchar(upp_letter);
 	}
