@@ -10,19 +10,16 @@
  */
 int main(void)
 {
-	char alphabet_low[] = "abcdefghijklmnopqrstuvwxyz";
-	char alphabet_upp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int n = sizeof(alphabet_low) - 1;
-	int m = sizeof(alphabet_upp) - 1;
-	int i;
+	char low_letter = 'a';
+	char upp_letter = 'A';
 
-	for (i = 0 ; i < n; i++)
+	for (low_letter; low_letter <= 'z'; low_letter++)
 	{
-		putchar(alphabet_low[i]);
+		putchar(low_letter);
 	};
-	for (i = 0 ; i < m; i++)
+	for (upp_letter; upp_letter <= 'Z'; upp_letter++)
 	{
-		putchar(alphabet_upp[i]);
+		putchar(upp_letter);
 	}
 	putchar('\n');
 	return (0);
