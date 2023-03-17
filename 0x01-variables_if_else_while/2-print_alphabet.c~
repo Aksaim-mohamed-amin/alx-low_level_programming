@@ -1,0 +1,21 @@
+#include <stdio.h>
+/* more headers goes there */
+
+/**
+ * main - Entry piont
+ *
+ * Description: 'print the alphabit in lowercase using putchar'
+ *
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+	char alphabit[] = "abcdefghigklmnopqrstuvwz";
+
+	for (int i = 0; i < sizeof(alphabit) - 1; i++)
+	{
+		putchar(alphabit[i]);
+	}
+	putchar('\n');
+	return (0);
+}
