@@ -10,11 +10,17 @@
  */
 int main(void)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUWXYZ";
-	int n = sizeof(alphabet) - 1;
+	char alphabet_low[] = "abcdefghijklmnopqrstuvwxyz";
+	char alphabet_upp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int n = sizeof(alphabet_low) - 1;
+	int m = sizeof(alphabet_upp) - 1;
 	int i;
 
 	for (i = 0 ; i < n; i++)
+	{
+		putchar(alphabet[i]);
+	};
+	for (i = 0 ; i < m; i++)
 	{
 		putchar(alphabet[i]);
 	}
