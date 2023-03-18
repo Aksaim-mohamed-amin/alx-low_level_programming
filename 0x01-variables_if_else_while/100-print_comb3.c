@@ -10,17 +10,20 @@
  */
 int main(void)
 {
-	int i;
+	int i, j;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 9; i++)
 	{
-		putchar('0' + i);
-		if (i = 9)
+		for (j = i + 1; j < 10; j++)
 		{
-			break;
+			putchar('0' + i);
+			putchar('0' + j);
+			if (i < 8)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
-		putchar(',');
-		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
