@@ -1,1 +1,1 @@
-this file will contain basic tasks about loops and functions
+This repo is for C
