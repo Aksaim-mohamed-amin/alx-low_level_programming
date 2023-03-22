@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- * main - Entry piont
+ * main entery point
  *
  * Description: 'print _putchar'
  *
- * Return: Always 0 (success)
+ * Return: 0 always
  */
 int main(void)
 {
