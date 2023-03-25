@@ -3,18 +3,18 @@
 /**
  * main - Entry point
  *
- * Description: 'Print the alphabet using putchar()'
+ * Description: 'Print the numbers from 0 to 9'
  *
  * Return: Always 0
  */
 
 int main(void)
 {
-	char letter;
+	int i;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(letter);
+		printf("%d", i);
 	}
 	putchar('\n');
 	return (0);

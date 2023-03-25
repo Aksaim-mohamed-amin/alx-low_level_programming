@@ -3,7 +3,8 @@
 /**
  * main - Entry point
  *
- * Description: 'Print the alphabet using putchar()'
+ * Description: 'Print the alphabet using putchar()
+ * and sekkiping the two letter q end e'
  *
  * Return: Always 0
  */
@@ -14,7 +15,10 @@ int main(void)
 
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar(letter);
+		if (letter != 'e' && letter != 'q')
+		{
+			putchar(letter);
+		}
 	}
 	putchar('\n');
 	return (0);

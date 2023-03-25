@@ -5,7 +5,8 @@
 /**
  * main - Entry point
  *
- * Description: 'Generate a random number and test if it is negative, positive
+ * Description: 'Generate a random number and test if last digit is negative,
+ * positive
  * or equal to zero'
  *
  * Return: Always 0
