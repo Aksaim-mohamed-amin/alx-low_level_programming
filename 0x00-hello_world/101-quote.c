@@ -14,7 +14,7 @@ int main(void)
 	char str[] = "and that piece of art is useful\" - ";
 	char str2[] = "Dora Korpar, 2015-10-19";
 
-	write(STDERR_FILENO, str, sizeof(str) - 1);
-	write(STDERR_FILENO, str2 sizeof(str2) - 1);
+	fwrite(STDERR_FILENO, str, sizeof(str) - 1);
+	fwrite(STDERR_FILENO, str2 sizeof(str2) - 1);
 	return (1);
 }
