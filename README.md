@@ -1,9 +1,9 @@
-#ALX Low-Level Programming with C
+# ALX Low-Level Programming with C
 
 This folder contains the tasks and exercises for learning the low-levelprogramming language C as part of the ALX Software Engineering program.
 The materials are designed to start from the very beginning, assuming no prior programming experience, and progress gradually to more advanced concepts.
 
-##Getting Started
+## Getting Started
 
 Before beginning this course, it is recommended that you have a basic understanding of computer fundamentals, including hardware and software concepts, and the ability to use a command-line interface. Additionally, you will need a C compiler installed on your computer.
 
@@ -11,7 +11,7 @@ All the files in this folder will be compiled on Ubuntu 20.04 LTS using gcc, usi
 
 I will also be using the Betty style for all my C code. You can find more information about the Betty style in [Here](https://github.com/holbertonschool/Betty/wiki)
 
-##Task Structure
+## Task Structure
 
 The tasks are organized into modules, each covering a specific topic in C programming. Each module contains:
 
