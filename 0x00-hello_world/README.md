@@ -75,3 +75,6 @@ Additionally, you will need a C compiler installed on your computer.
     - You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
     - Your program should return 1
     - Your program should compile without any warnings when using the -Wall gcc option
+
+## Contributing
+If you have any suggestions or improvements for the tasks or exercises, please feel free to contribute. You can do this by forking the repository, making your changes, and submitting a pull request. All contributions are welcome and appreciated.
