@@ -10,13 +10,9 @@ Before starting this module, it is recommended that you have a basic understandi
 including hardware and software concepts, and the ability to use a command-line interface.
 Additionally, you will need a C compiler installed on your computer.
 
-## Tasks
+## Mandatory Tasks
 
-The tasks in this module as follows:
-
-### Mandatory Tasks
-
-#### - [x] 0. Preprocessor
+- [x] 0. Preprocessor
 
 Write a script that runs a C file through the preprocessor and save the result into another file.
 
