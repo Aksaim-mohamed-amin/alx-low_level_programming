@@ -6,7 +6,7 @@
  * Description: 'print the 50 first fibonacci number starting from 1 and 2'
  */
 
-void main(void)
+int main(void)
 {
 	long int a = 1, b = 2, sum;
 	int i;
@@ -20,4 +20,5 @@ void main(void)
 		b = sum;
 	}
 	printf("\n");
+	return (0);
 }
