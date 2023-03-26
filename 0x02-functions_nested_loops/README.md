@@ -4,6 +4,19 @@ This folder contains tasks for learning how to create functions and work with ne
 ## Getting Started
 Before starting this module, it is recommended that you have a basic understanding of computer programming concepts, including basic syntax, data types, and control flow statements. Additionally, you should have some familiarity with C programming concepts, including variable types and the use of the gcc compiler.
 
+## Project Requirements
+-   Allowed editors:  `vi`,  `vim`,  `emacs`
+-   All your files will be compiled on Ubuntu 20.04 LTS using  `gcc`, using the options  `-Wall -Werror -Wextra -pedantic -std=gnu89`
+-   All your files should end with a new line
+-   A  `README.md`  file, at the root of the folder of the project is mandatory
+-   Your code should use the  `Betty`  style. It will be checked using  [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl "betty-style.pl")  and  [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl "betty-doc.pl")
+-   You are not allowed to use global variables
+-   No more than 5 functions per file
+-   You are not allowed to use the standard library. Any use of functions like  `printf`,  `puts`, etc… is forbidden
+-   You are allowed to use  [_putchar](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c "_putchar")
+-   The prototypes of all your functions and the prototype of the function  `_putchar`  should be included in header file called  `main.h`
+
+
 ## Mandatory Tasks
 
 - [x] 0. _putchar
