@@ -1,14 +1,24 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
  *
- * Description: 'print _putchar followed by a new line'
+ * Description: 'print _putchar followed by a new line
+ * using _putchar() function in main.h'
  *
- * Retyrn: Always 0
+ * Return: Always 0
  */
 
 int main(void)
 {
-	prin
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+	return (0);
 }
