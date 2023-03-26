@@ -5,9 +5,11 @@
  *
  * Description: 'computes and prints the sum of all the miltiples
  * of 3 and 5 below 1024 (excluded)
+ *
+ * Return: the sum
  */
 
-void main(void)
+int main(void)
 {
 	int x, sum;
 
@@ -21,4 +23,5 @@ void main(void)
 		}
 	}
 	printf("%d\n", sum);
+	return (sum);
 }
