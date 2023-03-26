@@ -1,13 +1,16 @@
 #include <stdlib.h>
+
 /**
- * _abs - main function
+ * _abs - Entrey point
  *
- * Description: 'return the absolute of a number'
+ * Description: 'return the abs of a number using
+ * the function abs()'
  *
- * @n : number giving
+ * @n: the number giving
  *
  * Return: abs(n)
  */
+
 int _abs(int n)
 {
 	return (abs(n));
