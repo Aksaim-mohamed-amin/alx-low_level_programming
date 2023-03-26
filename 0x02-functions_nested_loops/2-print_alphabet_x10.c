@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0c
+
 /**
  * print_alphabet_x10 - Entry point
  *
