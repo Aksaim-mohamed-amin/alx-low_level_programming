@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: 'Print all possibe combinations of two digit numbers
+ * Description: 'Print all possibe combinations of four digit numbers
  *  using putchar'
  *
  * Return: Always 0
