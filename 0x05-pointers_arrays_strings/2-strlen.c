@@ -1,5 +1,5 @@
 /**
- * _strlen(char *s) - main function
+ * _strlen - main function
  *
  * Description: 'find the lenght of a string'
  *

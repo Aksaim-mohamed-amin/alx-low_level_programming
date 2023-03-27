@@ -1,5 +1,5 @@
 /**
- * reste_to_98 - main function
+ * reset_to_98 - main function
  *
  * Description: 'reset the value of the address to 98'
  *
