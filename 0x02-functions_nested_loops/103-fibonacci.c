@@ -10,17 +10,19 @@
 
 int main(void)
 {
-	long int a = 1, b = 2, sum;
+	long int a = 1, b = 2, sum, result = 0;
 	int i;
 
-	printf("%ld, %ld", a, b);
 	for (i = 0; i < 48; i++)
 	{
 		sum = a + b;
-		printf(", %ld", sum);
+		if(sum % 2 == 0)
+		{
+			result += sum;
+		}
 		a = b;
 		b = sum;
 	}
-	printf("\n");
+	printf("%ld\n", result);
 	return (0);
 }
