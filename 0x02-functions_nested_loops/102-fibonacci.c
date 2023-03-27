@@ -11,11 +11,11 @@ int main(void)
 	long int a = 1, b = 2, sum;
 	int i;
 
-	printf("%ld, %ld, ", a, b);
-	for (i = 0; i < 49; i++)
+	printf("%ld, %ld", a, b);
+	for (i = 0; i < 48; i++)
 	{
 		sum = a + b;
-		printf("%ld, ", sum);
+		printf(", %ld", sum);
 		a = b;
 		b = sum;
 	}
