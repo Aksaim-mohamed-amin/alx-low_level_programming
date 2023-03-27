@@ -10,18 +10,19 @@
 
 int main(void)
 {
-	long int a = 1, b = 2, sum, result = 0;
+	long int a = 0, b = 1, sum = 0, result = 0;
 	int i;
 
-	for (i = 0; i < 48; i++)
+	for (; sum < 4000000; i++)
 	{
 		sum = a + b;
-		if(sum % 2 == 0)
+		a = b;
+		b = sum;
+		if (sum % 2 == 0)
 		{
 			result += sum;
 		}
-		a = b;
-		b = sum;
+
 	}
 	printf("%ld\n", result);
 	return (0);
