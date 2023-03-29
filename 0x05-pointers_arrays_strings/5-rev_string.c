@@ -1,17 +1,27 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
+ * rev_string - main function
  *
- * Return: Always 0.
+ * Description: 'Reverse a string'
+ *
+ * @s: string passed to function
  */
-int main(void)
-{
-	char s[11] = "Holberton!";
 
-	printf("%s\n", s);
-	rev_string(s);
-	printf("%s\n", s);
-	return (0);
+void rev_string(char *s)
+{
+	int i, length = 0;
+	char temp;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		length++;
+	}
+
+	for (i = 0; i <= (length - 1) / 2; i++)
+	{
+		temp = s[i];
+		s[i] = s[length - 1 - i];
+		s[length - 1 - i] = temp;
+	}
 }
