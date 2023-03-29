@@ -5,7 +5,7 @@
  *
  * Description: 'Print the sececend half of a string'
  *
- * @s: string passed to function
+ * @str: string passed to function
  */
 
 void puts_half(char *str)
@@ -16,9 +16,9 @@ void puts_half(char *str)
 	{
 		length++;
 	}
-	for (i = 0; i <= length; i++)
+	for (i = 0; i < length; i++)
 	{
-		if (i >= (length) / 2)
+		if (i > (length) / 2)
 		{
 			_putchar(str[i]);
 		}
