@@ -5,6 +5,8 @@
  *
  * @dest: where you want to store the string
  * @src: the original string
+ *
+ * Return: the copy of the string dest.
  */
 
 char *_strcpy(char *dest, char *src)
