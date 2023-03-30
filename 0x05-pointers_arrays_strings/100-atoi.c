@@ -12,7 +12,8 @@
 
 int _atoi(char *s)
 {
-	int i, res = 0, sign = 1;
+	int i, sign = 1;
+	unsigned int res = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -24,7 +25,7 @@ int _atoi(char *s)
 		{
 			res = res * 10 + s[i] - '0';
 
-			if(s[i + 1] < 48 || s[i + 1] > 57)
+			if (s[i + 1] < 48 || s[i + 1] > 57)
 			{
 				break;
 			}
