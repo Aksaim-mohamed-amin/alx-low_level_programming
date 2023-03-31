@@ -10,31 +10,20 @@
 
 char *leet(char *s)
 {
-	char *c = s;
+	int i, j;
+	char letter[] = "aAeEoOtTlL";
+	char code[] = "4433007711";
 
-	while (*c)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*c == 'a' || *c == 'A')
+		for (j = 0; letter[j] != '\0'; j++)
 		{
-			*c = '0' + 4;
+			if (s[i] == letter[j])
+			{
+				s[i] = code[j];
+			}
 		}
-		else if (*c == 'e' || *c == 'E')
-		{
-			*c = '0' + 3;
-		}
-		else if (*c == 'o' || *c == 'O')
-		{
-			*c = '0';
-		}
-		else if (*c == 't' || *c == 'T')
-		{
-			*c = '0' + 7;
-		}
-		else if (*c == 'l' || *c == 'L')
-		{
-			*c = '0' + 1;
-		}
-		c++;
 	}
+
 	return (s);
 }
