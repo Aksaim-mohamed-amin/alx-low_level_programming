@@ -1,25 +1,20 @@
+#include "main.h"
+
 /**
- * _strcmp
+ * _strcmp - compares two strings
  *
- * Description: 'compare two strings'
+ *@s1: first string
+ *@s2: second string
  *
- * @s1: first string
- * @s2: secend string
- *
- * Return: 0 if the strings are equals, 0 > if s1 > s2, and 0 < is s1 < s2'
+ *Return: integer
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, value1 = 0, value2 = 0;
-
-	for (i = 0; s1[i] != '\0'; i++)
+	while (*s1 && (*s1 == *s2))
 	{
-		value1 += s1[i];
+		s1++;
+		s2++;
 	}
-	for (i = 0; s2[i] != '\0'; i++)
-	{
-		value2 += s2[i];
-	}
-	return (value1 - value2);
+	return (*(char *)s1 - *(char *)s2);
 }
