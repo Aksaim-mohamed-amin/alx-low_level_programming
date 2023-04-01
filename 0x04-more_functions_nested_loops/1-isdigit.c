@@ -1,17 +1,21 @@
-#include "main.h"
-
 /**
- * _isdigit - check for digit
- * @c: The character to check
- *
- * Return: On digit 1.
- * On error, 0 is returned, and errno is set appropriately.
- */
+* _isdigit - main function
+*
+* Description: 'check if the character is a digit'
+*
+* @c: character to check
+*
+* Return: 1 if digit 0 if not
+*/
+
 int _isdigit(int c)
 {
-	while (c >= 48 && c <= 57)
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
