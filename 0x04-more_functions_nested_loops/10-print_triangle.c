@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_square - main function
+ * print_triangle - main function
  *
- * Description: 'Print square of the character # using _putchar'
+ * Description: 'Print triangle of the character # using _putchar'
  *
- * @size: The size of the square
+ * @size: The size of the triangle
  */
 
 void print_triangle(int size)

@@ -6,9 +6,11 @@
  * Description: 'Print the numbers from 1 to 100, but for multiples of 3
  * print Fizz instead of the number, and for the multiple of 5 print Buzz,
  * and for the numbers who are multiple of 3 and 5 print FizzBuzz'
+ *
+ * Return: Always 0 Success
  */
 
-void main(void)
+int main(void)
 {
 	int i;
 
@@ -33,4 +35,5 @@ void main(void)
 		}
 	}
 	printf("\n");
+	return (0);
 }
