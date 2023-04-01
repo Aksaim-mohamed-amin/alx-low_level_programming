@@ -3,21 +3,21 @@
 /**
  * _isalpha - Entery point
  *
- * Description: 'Test if a charachter is lowercase'
+ * Description: 'Test if a charachter is alphabet or not'
  *
  * @c: 'charachter to be tested'
  *
- * Return: 1 if lowercase 0 if not
+ * Return: 1 if alphabet 0 if not
  */
 
 int _isalpha(int c)
 {
-	if (isalpha(c) == 0)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
-		return (0);
+		return (1);
 	}
 	else
 	{
-		return (1);
+		return (0);
 	}
 }
