@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: 'Print the numbers from 1 to 100, but for multiples of 3
+ * print Fizz instead of the number, and for the multiple of 5 print Buzz,
+ * and for the numbers who are multiple of 3 and 5 print FizzBuzz'
+ */
+
+void main(void)
+{
+	int i;
+
+	printf("1");
+	for (i = 2; i <= 100; i++)
+	{
+		if ((i % 3) == 0 && (i % 5) != 0)
+		{
+			printf(" Fizz");
+		}
+		else if ((i % 5) == 0 && (i % 5) != 0)
+		{
+			printf(" Buzz");
+		}
+		else if ((i % 5) == 0 && (i % 3) == 0)
+		{
+			printf(" FizzBuzz");
+		}
+		else
+		{
+			printf(" %d", i);
+		}
+	}
+	printf("\n");
+}
