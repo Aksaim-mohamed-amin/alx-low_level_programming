@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - Entry point
@@ -10,15 +11,28 @@
 
 int main(void)
 {
-	long long int n = 612852475143, i;
+	long int i, n, max;
 
-	for (i = n - 1; i > 0; i--)
+	n = 612852475143;
+	max = -1;
+
+	while (n % 2 == 0)
 	{
-		if ((n % i) == 0)
+		n = n / 2;
+		max = 2;
+	}
+	for (i = 3; i <= sqrt(n); i = i + 2)
+	{
+		while (n % i == 0)
 		{
-			printf("%lld\n", i);
-			break;
+			n = n / i;
+			max = i;
 		}
 	}
+	if (n > 2)
+	{
+		max = n;
+	}
+	printf("%ld\n", max);
 	return (0);
 }
