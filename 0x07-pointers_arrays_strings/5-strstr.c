@@ -12,7 +12,7 @@
  *         or NULL if the substring is not found.
  */
 
-char *_strstr(char *hystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	int i, j, length = 0;
 
@@ -20,16 +20,20 @@ char *_strstr(char *hystack, char *needle)
 	{
 		length++;
 	}
-	for (i = 0; hystack[i] != '\0'; i++)
+	for (i = 0; haystack[i] != '\0'; i++)
 	{
 		for (j = 0; needle[j] != '\0'; j++)
 		{
-			if (needle[j] == hystack[i])
+			if (needle[j] == haystack[i + j])
 			{
-				if (needle[j + 1] == hystack[i + 1])
-					{
-						return (needle);
-					}
+				if (j == length - 1)
+				{
+					return (&haystack[i]);
+				}
+			}
+			else
+			{
+				break;
 			}
 		}
 	}
