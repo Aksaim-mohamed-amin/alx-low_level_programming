@@ -20,22 +20,29 @@ char *_strstr(char *haystack, char *needle)
 	{
 		length++;
 	}
-	for (i = 0; haystack[i] != '\0'; i++)
+	if (length > 0)
 	{
-		for (j = 0; needle[j] != '\0'; j++)
+		for (i = 0; haystack[i] != '\0'; i++)
 		{
-			if (needle[j] == haystack[i + j])
+			for (j = 0; needle[j] != '\0'; j++)
 			{
-				if (j == length - 1)
+				if (needle[j] == haystack[i + j])
 				{
-					return (&haystack[i]);
+					if (j == length - 1)
+					{
+						return (&haystack[i]);
+					}
+				}
+				else
+				{
+					break;
 				}
 			}
-			else
-			{
-				break;
-			}
 		}
+		return (NULL);
 	}
-	return (NULL);
+	else
+	{
+		return (NULL);
+	}
 }
