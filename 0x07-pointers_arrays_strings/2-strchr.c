@@ -24,10 +24,10 @@ char *_strchr(char *s, char c)
 	}
 	if (*s == '\0' && c != '\0')
 	{
-		return (s);
+		return (NULL);
 	}
 	else
 	{
-		return (NULL);
+		return (s);
 	}
 }
