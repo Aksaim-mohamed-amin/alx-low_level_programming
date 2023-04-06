@@ -78,7 +78,7 @@ Before starting this module, it is recommended that you have a basic understandi
 	
 	The function should print the second half of the string str
 
-If the number of characters is odd, the function should print the last n characters of the string, where n = (length_of_the_string - 1) / 2
+	If the number of characters is odd, the function should print the last n characters of the string, where n = (length_of_the_string - 1) / 2
 
 - [x] 8.  Arrays are not pointers : 
 
