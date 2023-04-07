@@ -36,5 +36,5 @@ int sqrt_root(int n, int i)
 	{
 		return (i);
 	}
-	return (sqrt_root(n , i + 1));
+	return (sqrt_root(n, i + 1));
 }
