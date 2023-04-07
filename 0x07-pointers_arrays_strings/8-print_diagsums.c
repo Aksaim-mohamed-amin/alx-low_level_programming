@@ -22,7 +22,7 @@ void print_diagsums(int *a, int size)
 			{
 				diag1 += *(a + i * size + j);
 			}
-			if (i + j == size)
+			if (i + j == size - 1)
 			{
 				diag2 += *(a + i * size + j);
 			}
