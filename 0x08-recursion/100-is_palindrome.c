@@ -12,24 +12,46 @@
 
 int is_palindrome(char *s)
 {
-	int i, length = 0;
+	return (palindrome(s, 0, str_len(s) - 1));
+}
 
-	for (i = 0; s[i] != '\0'; i++)
+
+/**
+ * str_len - main function
+ *
+ * Description: 'calculate the length of a string'
+ *
+ * @s: string to calcule the length of it
+ *
+ * Return: the length of the string s
+ */
+
+int str_len(char *s)
+{
+	if (*s == '\0')
 	{
-		length++;
+		return (0);
 	}
-	return(palindrome(s, 0, length - 1));
+	return (1 + str_len(s + 1));
 }
 
 /**
+ * palindrome - main function
  *
+ * Description: 'test if a string is palindrome or not'
+ *
+ * @s: string to test
+ * @start: string start point
+ * @end: string end point
+ *
+ * Return: 1 if it is palindrome 0 if not
  */
 
 int palindrome(char *s, int start, int end)
 {
 	if (start >= end)
 	{
-		return(1);
+		return (1);
 	}
 	if (s[start] != s[end])
 	{
