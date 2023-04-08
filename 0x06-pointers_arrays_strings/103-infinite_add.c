@@ -1,43 +1,56 @@
-/**
- * infinte_add - main function
- *
- * Description: 'add two numbers , the numbers are giving as a string'
- *
- * @n1: first number
- * @n2: secend number
- * @r: the buffer used to stor the result
- * @size_r: size of the buffer r
- *
- * Return: the buffer r and 0 if the result cant be fit in the buffer
- */
+#include "main.h"
+#include <stdio.h>
 
+/**
+ * infinite_add - adds two numbers.
+ *
+ *@n1: number 1
+ *@n2: number 2
+ *@r: buffer that the function will use to store the result
+ *@size_r: buffer size
+ *
+ * Return: string, or 0 if impossible
+ */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	long int i, j;
-	long int size1 = 0, size2 = 0, num1 = 0, num2 = 0, res;
-	char result[] = "0";
+	int l1, l2, k, biggest, sum, leftover;
 
-	for (i = 0; n1[i] != '\0'; i++)
+	for (l1 = 0; n1[l1] != '\0'; l1++)
+		;
+	for (l2 = 0; n2[l2] != '\0'; l2++)
+		;
+	l1--, l2--, size_r--;
+	if (l1 >= l2)
+		biggest = l1;
+	else
+		biggest = l2;
+	if (biggest + 2 <= size_r)
 	{
-		size1++;
+		if ((n1[l1] - '0') + (n2[l2] - '0') >= 10)
+			biggest = biggest + 1;
+		for (k = 0, leftover = 0; biggest >= 0; k++, l1--, l2--, biggest--)
+		{
+			sum = 0;
+			if (l1 >= 0 && l2 >= 0)
+				sum = n1[l1] - '0' + n2[l2] - '0' + leftover;
+			else if (l1 >= 0)
+				sum = n1[l1] - '0' + leftover;
+			else if (l2 >= 0)
+				sum = n2[l2] - '0' + leftover;
+			else
+				sum = leftover;
+			if (sum >= 10)
+			{
+				sum = sum - 10;
+				leftover = 1;
+			}
+			else
+				leftover = 0;
+			r[biggest] = (sum % 10) + '0';
+		}
+		r[k] = '\0';
+		return (r);
 	}
-	for (i = 0; n2[i] != '\0'; i++)
-	{
-		size2++;
-	}
-
-	for (i = 0; i < size1; i++)
-	{
-		num1 = num1 * 10 + (n1[i] + '0');
-	}
-	for (i = 0; i < size2; i++)
-	{
-		num2 = num2 * 10 + (n2[i] + '0');
-	}
-	res = num1 + num2;
-	while (res > 0)
-	{
-
-	}
-
+	else
+		return (0);
 }
