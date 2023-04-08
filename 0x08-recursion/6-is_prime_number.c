@@ -13,7 +13,7 @@
 
 int is_prime_number(int n)
 {
-	if (n <= 1 || (n % 2 == 0) && n != 2)
+	if (n <= 1 || ((n % 2 == 0) && n != 2))
 	{
 		return (0);
 	}
@@ -21,10 +21,7 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	else
-	{
-		return (is_prime(n, n - 2));
-	}
+	return (is_prime(n, n - 2));
 }
 
 /**
@@ -49,8 +46,5 @@ int is_prime(int n, int i)
 	{
 		return (0);
 	}
-	else if (n % i != 0)
-	{
-		return (is_prime(n, i - 1));
-	}
+	return (is_prime(n, i - 1));
 }
