@@ -8,7 +8,7 @@
  * @argc: number of arguments passed to the program
  * @argv: array of the argument passed to the program
  *
- * return: 0 (Success)
+ * Return: 0 (Success)
  */
 
 int main(int argc, char *argv[] __attribute__((unused)))
