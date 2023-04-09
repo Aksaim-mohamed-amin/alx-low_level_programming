@@ -16,10 +16,10 @@ int main(int argc, char *argv[])
 {
 	if (argc == 3)
 	{
-		int sum;
+		int mul;
 
-		sum = atoi(argv[1]) + atoi(argv[2]);
-		printf("%d\n", sum);
+		mul = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", mul);
 		return (0);
 	}
 	printf("Error\n");
