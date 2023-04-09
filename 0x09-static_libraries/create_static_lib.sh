@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Compail all the files with the .c extension using a for loop
-for file in .c
+for file in *.c
 do
     gcc -Wall -Werror -Wextra -pedantic -c "$file"
 done
