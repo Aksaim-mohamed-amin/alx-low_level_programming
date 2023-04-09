@@ -7,6 +7,9 @@
  *
  * Description: 'add positive numbers and print the result'
  *
+ * @argc: number of arguments passed to the program
+ * @argv: array of the argument passed to the program
+ *
  * Return: 0 (Success)
  */
 

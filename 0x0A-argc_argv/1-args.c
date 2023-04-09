@@ -5,6 +5,9 @@
  *
  * Description: 'print the number of arguments passed tothe program'
  *
+ * @argc: number of arguments passed to the program
+ * @argv: array of the argument passed to the program
+ *
  * return: 0 (Success)
  */
 

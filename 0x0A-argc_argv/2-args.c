@@ -5,6 +5,9 @@
  *
  * Description: 'Print all arguments entered to the programe'
  *
+ * @argc: number of arguments passed to the programe
+ * @argv: array of the argument passed to the program
+ *
  * Return: 0 (Succes)
  */
 
