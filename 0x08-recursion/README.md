@@ -20,7 +20,7 @@ Recursion is a programming technique in which a function calls itself. In other 
     
 -   The standard library is not allowed.
 
--   The prototypes of all the functions and the prototype of the function  `_putchar`  will be included in a header file called  `holberton.h`
+-   The prototypes of all the functions and the prototype of the function  `_putchar`  will be included in a header file called  `main.h`
     
 
 ## Mandatory Tasks
