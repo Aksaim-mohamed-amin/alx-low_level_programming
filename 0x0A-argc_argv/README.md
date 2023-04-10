@@ -23,7 +23,7 @@ The main function in C can take two arguments:
     
 -   The standard library is allowed.
 
--   The prototypes of all the functions and the prototype of the function  `_putchar`  will be included in a header file called  `holberton.h`
+-   The prototypes of all the functions and the prototype of the function  `_putchar`  will be included in a header file called  `main.h`
     
 
 ## Mandatory Tasks
