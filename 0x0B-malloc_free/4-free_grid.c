@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * free_grid - main function
  *
