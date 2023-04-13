@@ -18,16 +18,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *str;
 
 	if (s1 == NULL)
+	{
 		len1 = 0;
+	}
 	else
+	{
 		for (i = 0; s1[i] != '\0'; i++)
 			len1++;
+	}
 
 	if (s2 == NULL)
+	{
 		len2 = 0;
+	}
 	else
+	{
 		for (i = 0; s2[i] != '\0'; i++)
 			len2++;
+	}
 
 	if (n >= len2)
 		n = len2;
