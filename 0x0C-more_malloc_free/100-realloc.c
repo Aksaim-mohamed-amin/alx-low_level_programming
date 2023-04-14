@@ -8,6 +8,8 @@
  * @ptr: pointer to the memory previously allocated with a call to malloc
  * @old_size: is the size alocated for ptr in bytes
  * @new_size: is the new size in bytes
+ *
+ * Return: the pointer to the new function
  */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
