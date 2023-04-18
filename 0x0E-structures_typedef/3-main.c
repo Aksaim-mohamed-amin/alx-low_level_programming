@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-    struct dog my_dog;
+    dog_t my_dog;
 
     my_dog.name = "Poppy";
     my_dog.age = 3.5;
