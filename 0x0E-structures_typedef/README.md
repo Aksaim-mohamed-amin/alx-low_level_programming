@@ -1,1 +1,1 @@
-structurs
+struct
