@@ -15,6 +15,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *new_dog;
 	char *new_name, *new_owner;
 
+	if (name == NULL || owner == NULL)
+		return (NULL);
+
 	/* allocate memory for the new dog structur */
 	new_dog = malloc(sizeof(dog_t));
 	if (new_dog == NULL)
