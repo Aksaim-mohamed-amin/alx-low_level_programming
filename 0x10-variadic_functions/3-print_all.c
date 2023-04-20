@@ -11,7 +11,6 @@ void print_all(const char * const format, ...)
 {
 	int i = 0;
 	char *str;
-
 	va_list data;
 
 	va_start(data, format);
@@ -44,6 +43,7 @@ void print_all(const char * const format, ...)
 
 		if (format[i + 1] != '\0')
 			printf(", ");
+
 		i++;
 	}
 	printf("\n");
