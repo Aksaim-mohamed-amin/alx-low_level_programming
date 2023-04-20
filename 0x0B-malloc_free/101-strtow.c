@@ -12,42 +12,26 @@
 
 char **strtow(char *str)
 {
-	char **p;
-	int i, j, k, words, len;
+	int i, j, words_count = 0, len = 0;
+	char **words;
 
-	for (i = 0, words = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i]; i++)
 	{
-		if (str[i] == ' ' && (i != 0 && str[i - 1] != ' '))
-			words++;
+		if (i != 0 && str[i + 1] != '\0'
+		    && str[i] == ' ' && str[i - 1] != ' ')
+			words_count++;
 	}
-	if (str[i - 1] != ' ' && words != 0)
-		words++;
-	p = malloc(sizeof(char *) * (words + 1));
-	if (p == NULL || words == 0)
+
+	words = malloc(sizeof(char) * words_count);
+
+	if (words == NULL)
 		return (NULL);
-	for (i = 0, k = 0; k < words && str[i] != '\0'; k++)
+
+	for (i = 0; str[i]; i++)
 	{
-		if (str[i] != ' ')
+		if (str[i] == ' ')
 		{
-			for (len = 0; str[i + len] != ' ' && str[i + len] != '\0'; len++)
-				;
-			p[k] = malloc(sizeof(char) * (len + 1));
-			if (p[k] == NULL)
-			{
-				for (; k >= 0; k--)
-					free(p[k]);
-				free(p);
-				return (NULL);
-			}
-			for (j = 0; j < len; j++, i++)
-				p[k][j] = str[i];
-			p[k][j] = '\0';
-		}
-		else
-		{
-			i++;
-			k--;
+			
 		}
 	}
-	return (p);
 }
