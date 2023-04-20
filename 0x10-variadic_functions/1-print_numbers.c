@@ -19,10 +19,15 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	va_start(nums, n);
 
 	/* Print the numbers */
-	for (i = 0; i < n - 1; i++)
-		printf("%d%s", va_arg(nums, int), seperator != NULL ? seperator : "");
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", va_arg(nums, int));
 
-	printf("%d\n", va_arg(nums, int));
+		if (i < n - 1)
+			printf("%s", seperator != NULL ? seperator : "");
+	}
+
+	printf("\n");
 
 	/* Clear the variadic list */
 	va_end(nums);
