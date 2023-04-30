@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * first - A constractur function to print a string befor the main function runs
+ * first - A constractur function to print a string befor main function start
  */
 void __attribute__((constructor)) first(void)
 {
