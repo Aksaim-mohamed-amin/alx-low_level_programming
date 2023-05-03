@@ -7,13 +7,14 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	listint_t *temp;
+	const listint_t *temp;
 	int count = 0;
 
 	temp = head;
 
 	while (temp != NULL)
 	{
+		printf("[%p] %d\n", (void *)temp, temp->n);
 		temp = temp->next;
 		count++;
 
