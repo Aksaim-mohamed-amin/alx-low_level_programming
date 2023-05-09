@@ -3,28 +3,36 @@
 /**
  * read_textfile - Read a text file and prints it to the POSIX standard outpu
  *
- * @filename: File name
+ * @filename: Pointer to the file name
  * @letters: The number of letters that it should be read and print
- * Return: The actual number of letters it could read and print
+ * Return: 0 If the function fails or filename is NULL, else return the number
+ *         of character printed
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *f;
-	int c;
-	size_t i;
+	ssize_t o, r, w;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 
-	f = fopen(filename, "r");
-	if (f == NULL)
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 		return (0);
 
-	for (i = 0; i < letters && (c = getc(f)) != EOF; i++)
+	o = open(filename, O_RDONLY);
+	r = read(o, buffer, letters);
+	w = write(STDOUT_FILENO, buffer, r);
+
+	if (o == -1 || r == -1 || r == -1 || r != w)
 	{
-		write(1, &c, 1);
+		free(buffer);
+		return (0);
 	}
 
-	fclose(f);
-	return (i);
+	free(buffer);
+
+	close(o);
+
+	return (w);
 }
