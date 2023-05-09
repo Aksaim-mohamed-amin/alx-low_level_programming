@@ -1,26 +1,33 @@
 #include "lists.h"
 
 /**
- * print_listint_safe - Print a listint-t list safley (detect loop)
+ * print_listint_safe - Prints a linked list of integers.
  *
- * @head: The head of the list
+ * @head: A pointer to the head node of the linked list.
+ * Return: The number of nodes printed.
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	const listint_t *temp;
-	int count = 0;
+	size_t num = 0;
+	const listint_t *visited[1024];
 
-	temp = head;
-
-	while (temp != NULL)
+	while (head != NULL && num < 1024)
 	{
-		printf("[%p] %d\n", (void *)temp, temp->n);
-		temp = temp->next;
-		count++;
+		size_t i;
 
-		if (count > 100)
-			exit(98);
+		for (i = 0; i < num; i++)
+		{
+			if (head == visited[i])
+			{
+				printf("-> [%p] %d\n", (void *)head, head->n);
+				return (num);
+			}
+		}
+
+		visited[num++] = head;
+		printf("[%p] %d\n", (void *)head, head->n);
+		head = head->next;
 	}
 
-	return (count);
+	return (num);
 }
