@@ -4,8 +4,8 @@
  * create_file - Creates a file with the specified filename and writes the
  *               text content to it.
  *
- * @@filename: The name of the file to create.
- * @ @text_content: A NULL-terminated string to write to the file.
+ * @filename: The name of the file to create.
+ * @text_content: A NULL-terminated string to write to the file.
  * Return: 1 on success, -1 on failure.
  */
 int create_file(const char *filename, char *text_content)
@@ -24,12 +24,12 @@ int create_file(const char *filename, char *text_content)
 		r_value = write(file, text_content, str_len(text_content));
 		if (r_value == -1)
 		{
-			close (file);
+			close(file);
 			return (-1);
 		}
 	}
 
-	close (file);
+	close(file);
 
 	return (1);
 }
