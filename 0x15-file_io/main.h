@@ -4,7 +4,7 @@
 /* Libraries */
 #include <stddef.h>
 #include <stdlib.h>
-#include <usistd.h>
+#include <unistd.h>
 #include <fcntl.h>
 
 /* Main Functions */
