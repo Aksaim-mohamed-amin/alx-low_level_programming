@@ -15,5 +15,9 @@ int append_text_to_file(const char *filename, char *text_content);
 
 /* Help Functions */
 int str_len(char *str);
+void check97(int ac, char *name);
+void check98(int src, char *name);
+void check99(int dst, char *nale);
+void check100(int close_value, int descriptor);
 
 #endif /* MAIN_H */
