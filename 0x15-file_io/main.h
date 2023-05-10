@@ -18,6 +18,6 @@ int append_text_to_file(const char *filename, char *text_content);
 
 /* Help Functions */
 int str_len(char *str);
-void print_error_exit(int code, const char *message, const char *file);
+void error_exit(int code, const char *msg, const char *file, int src, int dst);
 
 #endif /* MAIN_H */
