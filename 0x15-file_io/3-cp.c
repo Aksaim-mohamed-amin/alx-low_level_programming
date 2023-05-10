@@ -14,7 +14,7 @@ int main(int ac, char **av)
 	char buffer[BUFFER_SIZE];
 
 	if (ac != 3)
-		error_exit(97, "Usage: %s file_from file_to\n", av[0], -1, -1);
+		error_exit(97, "Usage: cp file_from file_to\n", av[0], -1, -1);
 
 	src = open(av[1], O_RDONLY);
 	if (src == -1)
