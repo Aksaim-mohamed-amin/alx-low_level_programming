@@ -5,7 +5,8 @@
  *
  * @ac: Arguments count
  * @av: Arguments array
- * Retrun: 0 (Success)
+ *
+ * Return: Always 0 (Success)
 */
 int main(int ac, char **av)
 {
