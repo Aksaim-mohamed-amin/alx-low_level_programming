@@ -12,6 +12,7 @@ int main(int ac, char **av)
 {
 	int src, dst, bytes_rd, bytes_wr;
 	char buffer[BUFFER_SIZE];
+	mode_t file_perm;
 
 	if (ac != 3)
 		print_error_exit(97, "Usage: cp file_from %s\n", av[0]);
@@ -20,7 +21,8 @@ int main(int ac, char **av)
 	if (src == -1)
 		print_error_exit(98, "Error: Can't read from file %s\n", av[1]);
 
-	dst = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	file_perm = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
+	dst = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, file_perm);
 	if (dst == -1)
 		print_error_exit(99, "Error: Can't write to %s\n", av[2]);
 
@@ -44,7 +46,6 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dst);
 		exit(100);
 	}
-
 	return (0);
 }
 
