@@ -51,8 +51,10 @@ int main(int ac, char **av)
  * error_exit - Print an error and exit with a code
  *
  * @code: Code to exit the program with it
- * @message: Error message to print
+ * @msg: Error message to print
  * @file: File name
+ * @src: source file descriptor or -1
+ * @dst: destination file descripot or -1
  */
 void error_exit(int code, const char *msg, const char *file, int src, int dst)
 {
