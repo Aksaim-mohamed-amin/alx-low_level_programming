@@ -36,12 +36,12 @@ int main(int ac, char **av)
 
 	if (close(src) == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", src);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", src);
 		exit(100);
 	}
 	if (close(dst) == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d\n", dst);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", dst);
 		exit(100);
 	}
 
@@ -57,6 +57,6 @@ int main(int ac, char **av)
  */
 void print_error_exit(int code, const char *message, const char *file)
 {
-	dprintf(2, message, file);
+	dprintf(STDERR_FILENO, message, file);
 	exit(code);
 }
