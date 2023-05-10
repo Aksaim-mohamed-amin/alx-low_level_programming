@@ -5,11 +5,12 @@
  *
  * @ac: Arguments count
  * @av: Arguments array
+ * Retrun: 0 (Success)
 */
 int main(int ac, char **av)
 {
 	int src, dst, bytes_rd, bytes_wr;
-	char *buffer[BUFFER_SIZE];
+	char buffer[BUFFER_SIZE];
 
 	if (ac != 3)
 		print_error_exit(97, "Usage: cp file_from %s\n", av[0]);
@@ -24,7 +25,7 @@ int main(int ac, char **av)
 
 	while ((bytes_rd = read(src, buffer, BUFFER_SIZE)) > 0)
 	{
-		bytes_wr = write(dst, buffer, BUFFER_SIZE);
+		bytes_wr = write(dst, buffer, bytes_rd);
 		if (bytes_wr == -1)
 			print_error_exit(99, "Error: Can't write to %s\n", av[2]);
 	}
