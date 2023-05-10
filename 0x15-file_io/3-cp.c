@@ -31,7 +31,7 @@ int main(int ac, char **av)
 	}
 
 	if (bytes_rd == -1)
-		print_error_exit(99, "Error: Can't write to %s\n", av[2]);
+		print_error_exit(98, "Error: Can't read from file %s\n", av[1]);
 
 	if (close(src) == -1)
 	{
@@ -54,7 +54,7 @@ int main(int ac, char **av)
  * @message: Error message to print
  * @file: File name
  */
-void print_error_exit(int code, char *message, char *file)
+void print_error_exit(int code, const char *message, const char *file)
 {
 	dprintf(2, message, file);
 	exit(code);
