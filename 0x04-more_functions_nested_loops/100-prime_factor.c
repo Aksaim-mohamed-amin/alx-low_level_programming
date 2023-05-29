@@ -2,9 +2,7 @@
 #include <math.h>
 
 /**
- * main - Entry point
- *
- * Description: 'Find the largest prime factor of a number'
+ * main - Find the largest prime factor of a number
  *
  * Return: Always 0 Success
  */
@@ -30,9 +28,8 @@ int main(void)
 		}
 	}
 	if (n > 2)
-	{
 		max = n;
-	}
+
 	printf("%ld\n", max);
 	return (0);
 }

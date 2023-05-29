@@ -1,7 +1,5 @@
 /**
-* _isdigit - main function
-*
-* Description: 'check if the character is a digit'
+* _isdigit - Check if the character is a digit
 *
 * @c: character to check
 *
@@ -11,11 +9,7 @@
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
-	{
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+
+	return (0);
 }

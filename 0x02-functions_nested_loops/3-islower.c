@@ -1,23 +1,17 @@
 #include <ctype.h>
 
 /**
- * _islower - Entery point
+ * _islower - Test if a charachter is lowercase
  *
- * Description: 'Test if a charachter is lowercase'
+ * @c: Charachter to be tested
  *
- * @c: 'charachter to be tested'
- *
- * Return: 1 if lowercase 0 if not
+ * Return: 1 if lowercase, 0 if not
  */
 
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
-	{
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+
+	return (0);
 }

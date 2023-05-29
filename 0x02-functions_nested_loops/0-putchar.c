@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: 'print _putchar followed by a new line
- * using _putchar() function in main.h'
+ * main - print _putchar followed by a new line
+ *              using _putchar() function in main.h
  *
  * Return: Always 0
  */

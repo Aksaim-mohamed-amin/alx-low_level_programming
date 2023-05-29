@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: 'print the 50 first fibonacci number starting from 1 and 2'
+ * main - Print the 50 first fibonacci number starting from 1 and 2
  *
  * Return: always 0 success
  */
@@ -19,10 +17,7 @@ int main(void)
 		a = b;
 		b = sum;
 		if (sum % 2 == 0)
-		{
 			result += sum;
-		}
-
 	}
 	printf("%ld\n", result);
 	return (0);

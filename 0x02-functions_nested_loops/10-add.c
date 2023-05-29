@@ -1,12 +1,10 @@
 /**
- * add - Main function
+ * add - Return the sum of two integers
  *
- * Description: 'return the sum of two integers'
+ * @x: First Number
+ * @y: Secend Number
  *
- * @x: number to add
- * @y: number to add
- *
- * Return: the summe of x and y
+ * Return: Summe of x and y
  */
 
 int add(int x, int y)

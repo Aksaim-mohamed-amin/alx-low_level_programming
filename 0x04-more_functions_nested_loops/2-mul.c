@@ -1,7 +1,5 @@
 /**
-* mul - main function
-*
-* Description: 'multiply two integers'
+* mul - Multiply two integers
 *
 * @a: first integer
 * @b: secend integer

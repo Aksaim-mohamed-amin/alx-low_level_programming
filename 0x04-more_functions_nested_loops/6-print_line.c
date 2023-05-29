@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * print_line - main function
+ * print_line - Draw a stright line in the terminal using '_'
  *
- * Description: 'draw a stright line in the terminal using _'
- *
- * @n: the length of the line
+ * @n: Length of the line
  */
 
 void print_line(int n)

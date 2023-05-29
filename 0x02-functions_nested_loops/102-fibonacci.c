@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: 'print the 50 first fibonacci number starting from 1 and 2'
+ * main - print the 50 first fibonacci number starting from 1 and 2
  *
  * Return: always 0 success
  */

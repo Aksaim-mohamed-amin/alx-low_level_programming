@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - Entrey poin
- *
- * Description: 'Print the minutes starting frm 00:00 to 23:59'
+ * jack_bauer - Print the minutes starting frm 00:00 to 23:59
  */
 
 void jack_bauer(void)

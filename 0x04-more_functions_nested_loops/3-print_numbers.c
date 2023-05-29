@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - main function
- *
- * Description: 'print numbers from 0 to 9 using putchar'
+ * print_numbers - Print numbers from 0 to 9 using putchar
  */
 
 void print_numbers(void)

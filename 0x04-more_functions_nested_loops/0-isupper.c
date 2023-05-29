@@ -1,7 +1,5 @@
 /**
-* _isupper - main function
-*
-* Description: 'check if a letter is uppercase
+* _isupper - check if a letter is uppercase
 *
 * @c: letter to check
 *
@@ -11,11 +9,7 @@
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+
+	return (0);
 }
