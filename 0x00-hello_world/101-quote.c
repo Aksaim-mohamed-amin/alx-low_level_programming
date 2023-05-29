@@ -1,10 +1,9 @@
 #include <unistd.h>
 
 /**
- * main - Entry pint
- *
- * Description: 'Print to the screen without using printf() or puts()
- * but by using the write() function , that can write the error to the screen'
+ * main - Print to the screen without using printf() or puts()
+ *        but by using the write() function ,
+ *        that can write the error to the screen'
  *
  * Return: Always 1 to indecate there is an error
  */

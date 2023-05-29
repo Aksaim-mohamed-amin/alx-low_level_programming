@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: 'print to the screen using printf()'
+ * main - Print to the screen using printf()
  *
  * Return: Always 0
  */

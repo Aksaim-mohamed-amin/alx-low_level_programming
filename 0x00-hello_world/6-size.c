@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: 'Ptint the size of various types'
+ * main - Ptint the size of various types
  *
  * Return: Always 0
  */
