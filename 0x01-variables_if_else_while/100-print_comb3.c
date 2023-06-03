@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: 'Print all possibe combinations of two digit numbers
- *  using putchar'
+ * main - Print all possibe combinations of two digit numbers
+ *        using putchar
  *
  * Return: Always 0
  */
