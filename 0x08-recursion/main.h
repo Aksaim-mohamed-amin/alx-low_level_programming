@@ -18,5 +18,9 @@ int wildcmp(char *s1, char *s2);
 
 /* Help Functions */
 int _putchar(char c);
+int check_sqrt(int n, int i);
+int check_prime(int n, int i);
+int str_len(char *s);
+int palindrome(char *s, int start, int end);
 
 #endif /* MAIN_H */
