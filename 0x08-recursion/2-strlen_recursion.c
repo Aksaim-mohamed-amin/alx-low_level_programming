@@ -5,6 +5,8 @@
  *                     recursion
  *
  * @s: String to calculate it length
+ *
+ * Return: Length of the string s
  */
 int _strlen_recursion(char *s)
 {
