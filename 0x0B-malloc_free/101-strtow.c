@@ -43,6 +43,7 @@ char **strtow(char *str)
 				while (index >= 0)
 					free(words[index--]);
 				free(words);
+				return (NULL);
 			}
 			for (j = 0; j < wlen; j++)
 				words[index][j] = str[wstart + j];
