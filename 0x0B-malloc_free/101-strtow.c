@@ -37,7 +37,7 @@ char **strtow(char *str)
 				wlen++;
 				i++;
 			}
-			words[index] = malloc(sizeof(char) * wlen);
+			words[index] = malloc(sizeof(char) * wlen + 1);
 			if (words[index] == NULL)
 			{
 				while (index >= 0)
