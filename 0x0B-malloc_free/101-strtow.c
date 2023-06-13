@@ -46,7 +46,7 @@ char **strtow(char *str)
 			}
 			for (j = 0; j < wlen; j++)
 				words[index][j] = str[wstart + j];
-			index++;
+			word[index++][j] = '\0';
 		}
 	}
 	return (words);
