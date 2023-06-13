@@ -20,12 +20,12 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	for (i = 0; n2[i] != '\0'; i++)
 		len2++;
 
-	if (len1 + 1 >= size_r || len2 + 1 >= size_r)
+	if (len1 > size_r || len2 > size_r)
 		return (0);
 
 	len1--;
 	len2--;
-	while (len1 > 0 || len2 > 0 || carry != 0)
+	while (len1 >= 0 || len2 >= 0 || carry != 0)
 	{
 		sum = carry;
 
