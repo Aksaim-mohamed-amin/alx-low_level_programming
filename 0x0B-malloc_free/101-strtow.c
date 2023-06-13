@@ -10,7 +10,7 @@
  */
 char **strtow(char *str)
 {
-	int i, j, wcount = 0, wlen = 0, wstart, index = 0;
+	int i, j, wcount = 0, wlen, wstart, index = 0;
 	char **words;
 
 	if (str == NULL || str[0] == '\0')
@@ -31,6 +31,7 @@ char **strtow(char *str)
 		if (str[i] != ' ' && str[i + 1] != ' ')
 		{
 			wstart = i;
+			wlen = 0;
 			while (str[i] != ' ' && str[i + 1] != '\0')
 			{
 				wlen++;
