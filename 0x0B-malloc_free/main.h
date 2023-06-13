@@ -15,6 +15,6 @@ char *argstostr(int ac, char **av);
 char **strtow(char *str);
 
 /* Help Functions */
-
+int _strlen(char *str);
 
 #endif /* MAIN_H */
