@@ -28,11 +28,11 @@ char **strtow(char *str)
 
 	for (i = 0; str[i]; i++)
 	{
-		if (str[i] != ' ' && str[i + 1] != ' ')
+		if (str[i] != ' ')
 		{
 			wstart = i;
 			wlen = 0;
-			while (str[i] != ' ')
+			while (str[i] != ' ' && str[i + 1] != '\0')
 			{
 				wlen++;
 				i++;
