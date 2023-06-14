@@ -12,20 +12,20 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int i, len1 = 0, len2 = 0, index = 0, sum, carry = 0;
+	int i, len1, len2, biggest, index = 0, sum, carry = 0;
 	char tmp;
 
-	for (i = 0; n1[i] != '\0'; i++)
-		len1++;
-	for (i = 0; n2[i] != '\0'; i++)
-		len2++;
+	len1 = _strlen(n1);
+	len2 = _strlen(n2);
 
-	if (len1 + 1 >= size_r || len2 + 1 >= size_r)
+	biggest = len1 > len2 ? len1 : len2;
+
+	if (biggest + 1 >= size_r)
 		return (0);
 
 	len1--;
 	len2--;
-	while (len1 > 0 || len2 > 0 || carry != 0)
+	while (len1 >= 0 || len2 >= 0 || carry != 0)
 	{
 		sum = carry;
 
@@ -47,4 +47,21 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		r[index - 1 - i] = tmp;
 	}
 	return (r);
+}
+
+/**
+ * _strlen - Calculate the lenght of a string.
+ *
+ * @str: String
+ *
+ * Return: Lenght of str
+ */
+int _strlen(char *str)
+{
+	int i, len = 0;
+
+	for (i = 0; str[i]; i++)
+		len++;
+
+	return (len);
 }
