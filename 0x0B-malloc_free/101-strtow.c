@@ -1,13 +1,18 @@
 #include "main.h"
 /**
+ * strtow - Splits a string into array of words.
  *
+ * @str: String to split
+ *
+ * Return: Pointer to a 2D array or NULL if it fails or if str == NULL
+ *         or str == "".
  */
 char **strtow(char *str)
 {
 	char **words;
 	int i, j, wc, start, len, index = 0;
 
-	if (str == NULL || str[0] == '\0' || (str[0] == ' ' && str[1] == '\0'))
+	if (str == NULL || str[0] == '\0')
 		return (NULL);
 
 	wc = count_words(str);
