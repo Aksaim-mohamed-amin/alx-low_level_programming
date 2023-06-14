@@ -18,11 +18,11 @@ char **strtow(char *str)
 
 	for (i = 0; str[i]; i++)
 	{
-		if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
+		if (str[i] != ' ' && str[i + 1] && (str[i - 1] == ' ' || i == 0))
 		{
 			start = i;
 			len = 0;
-			while (str[i] != ' ')
+			while (str[i] != ' ' && str[i])
 			{
 				len++;
 				i++;
@@ -35,7 +35,8 @@ char **strtow(char *str)
 			}
 			for (j = 0; j < len; j++)
 				words[index][j] = str[start + j];
-			words[index++][j] = '\0';
+			words[index][j] = '\0';
+			index++;
 		}
 	}
 	return (words);
