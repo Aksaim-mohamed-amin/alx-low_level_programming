@@ -25,7 +25,7 @@ char **strtow(char *str)
 
 	for (i = 0; str[i]; i++)
 	{
-		if (str[i] != ' ' && str[i + 1] && (str[i - 1] == ' ' || i == 0))
+		if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
 		{
 			start = i;
 			len = 0;
@@ -34,7 +34,7 @@ char **strtow(char *str)
 				len++;
 				i++;
 			}
-			words[index] = malloc(sizeof(char) * (len +1));
+			words[index] = malloc(sizeof(char) * (len + 1));
 			if (words[index] == NULL)
 			{
 				free_arr(words, index);
@@ -58,14 +58,14 @@ char **strtow(char *str)
  */
 int count_words(char *str)
 {
-        int i, res = 0;
+	int i, res = 0;
 
-        for (i = 0; str[i]; i++)
-        {
-                if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
-                        res++;
-        }
-        return (res);
+	for (i = 0; str[i]; i++)
+	{
+		if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
+			res++;
+	}
+	return (res);
 }
 
 /**
@@ -74,7 +74,7 @@ int count_words(char *str)
  * @arr: Array to free.
  * @len: lenght of the array.
  */
-void free_arr(char ** arr, int len)
+void free_arr(char **arr, int len)
 {
 	int i;
 
