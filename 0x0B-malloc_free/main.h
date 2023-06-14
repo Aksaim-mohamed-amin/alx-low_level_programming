@@ -16,5 +16,7 @@ char **strtow(char *str);
 
 /* Help Functions */
 int _strlen(char *str);
+int count_words(char *str);
+void free_arr(char **arr, int len);
 
 #endif /* MAIN_H */

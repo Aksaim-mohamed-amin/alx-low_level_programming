@@ -1,54 +1,76 @@
 #include "main.h"
-
 /**
- * strtow - Splits a string into words.
  *
- * @str: String to split.
- *
- * Return: Pointer to the array that contains the words,
- *         and NULL if str is NULL or "".
  */
 char **strtow(char *str)
 {
-	int i, j, wcount = 0, wlen, wstart, index = 0;
 	char **words;
+	int i, j, wc, start, len, index = 0;
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
 
-	for (i = 0; str[i]; i++)
-		if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
-			wcount++;
-
-	words = malloc(sizeof(char *) * (wcount + 1));
+	wc = count_words(str);
+	words = malloc(sizeof(char *) * (wc + 1));
 	if (words == NULL)
 		return (NULL);
-
-	words[wcount] = NULL;
+	words[wc] = NULL;
 
 	for (i = 0; str[i]; i++)
 	{
-		if (str[i] != ' ')
+		if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
 		{
-			wstart = i;
-			wlen = 0;
-			while (str[i] != ' ' && str[i + 1] != '\0')
+			start = i;
+			len = 0;
+			while (str[i] != ' ')
 			{
-				wlen++;
+				len++;
 				i++;
 			}
-			words[index] = malloc(sizeof(char) * wlen + 1);
+			words[index] = malloc(sizeof(char) * (len +1));
 			if (words[index] == NULL)
 			{
-				while (index >= 0)
-					free(words[index--]);
-				free(words);
+				free_arr(words, index);
 				return (NULL);
 			}
-			for (j = 0; j < wlen; j++)
-				words[index][j] = str[wstart + j];
+			for (j = 0; j < len; j++)
+				words[index][j] = str[start + j];
 			words[index++][j] = '\0';
 		}
 	}
 	return (words);
+}
+
+/**
+ * count_words - Count the words in a string.
+ *
+ * @str: String.
+ *
+ * Return: Number of words in a string
+ */
+int count_words(char *str)
+{
+        int i, res = 0;
+
+        for (i = 0; str[i]; i++)
+        {
+                if (str[i] != ' ' && (str[i - 1] == ' ' || i == 0))
+                        res++;
+        }
+        return (res);
+}
+
+/**
+ * free_arr -  Free a 2D array.
+ *
+ * @arr: Array to free.
+ * @len: lenght of the array.
+ */
+void free_arr(char ** arr, int len)
+{
+	int i;
+
+	for (i = 0; i < len; i++)
+		free(arr[i]);
+	free(arr);
 }
