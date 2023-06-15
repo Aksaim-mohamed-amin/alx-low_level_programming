@@ -65,7 +65,7 @@ The main function in C can take two arguments:
 	-   If one of the number contains symbols that are not digits, print  `Error`, followed by a new line, and return  `1`
 	-   You can assume that numbers and the addition of all the numbers can be stored in an  `int`
 
-## Optional Tasks
+## Advanced Tasks
 
 - [x] 5. Minimal Number of Coins for Change : 
 

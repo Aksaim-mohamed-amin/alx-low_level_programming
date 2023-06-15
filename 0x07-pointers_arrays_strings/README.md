@@ -107,7 +107,7 @@ Note that in the following example we are casting an  `int[][]`  into an  `int*`
 
 
 
-## Optional Tasks
+## Advanced Tasks
 
 - [x] 8. Double pointer, double fun : 
 	

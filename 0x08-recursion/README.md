@@ -83,7 +83,7 @@ Recursion is a programming technique in which a function calls itself. In other 
 
 	-   Prototype:  `int is_prime_number(int n);`
 
-## Optional Tasks
+## Advanced Tasks
 
 - [x] 7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything : 
 

@@ -61,7 +61,7 @@ Additionally, you will need a C compiler installed on your computer.
     - You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
 
 
-## Optional Tasks
+## Advanced Tasks
 
 - [x] 7. Intel
     Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.

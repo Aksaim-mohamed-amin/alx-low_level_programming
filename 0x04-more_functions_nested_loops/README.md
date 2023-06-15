@@ -142,7 +142,7 @@ Write a function that prints a triangle, followed by a new line.
 
 - Use the character `#` to print the triangle
 
-## Optional Tasks
+## Advanced Tasks
 
 - [x] 11. The problem of distinguishing prime numbers from composite numbers and of resolving the latter into their prime factors is known to be one of the most important and useful in arithmetic :
 

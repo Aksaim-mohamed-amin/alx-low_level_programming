@@ -102,7 +102,7 @@ Before starting this module, it is recommended that you have a basic understandi
 
 	FYI: The standard library provides a similar function: strcpy. Run man strcpy to learn more.
 
-## Optional Tasks
+## Advanced Tasks
 
 - [x] 10.  Great leaders are willing to sacrifice their own personal interests for the good of the team : 
 	

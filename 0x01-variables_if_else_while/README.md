@@ -92,7 +92,7 @@ Before starting this module, it is recommended that you have a basic understandi
     -   You can only use  `putchar`  four times maximum in your code
     -   You are not allowed to use any variable of type  `char`
 
-##  Optional Tasks
+##  Advanced Tasks
 
 - [x] 10. Inventing is a combination of brains and materials. The more brains you use, the less material you need
     Write a program that prints all possible different combinations of two digits.

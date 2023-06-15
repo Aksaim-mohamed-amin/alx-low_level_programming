@@ -66,7 +66,7 @@ This project introduces the concepts of dynamic memory allocation and deallocati
 	-   Prototype: `void free_grid(int **grid, int height);`
 	-   Note that we will compile with your `alloc_grid.c` file. Make sure it compiles.
 
-## Optional Tasks
+## Advanced Tasks
 
 - [x] 5. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe : 
 
