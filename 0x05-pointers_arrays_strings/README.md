@@ -1,4 +1,4 @@
-# 0x05 - C Pointers, Arrays and Strings
+# 0x05 - Pointers, Arrays and Strings
 
 This repository contains tasks for learning how to work with pointers, arrays, and strings in C programming. The tasks cover topics such as pointer declaration, pointer arithmetic, array initialization, string manipulation, and memory allocation.
 

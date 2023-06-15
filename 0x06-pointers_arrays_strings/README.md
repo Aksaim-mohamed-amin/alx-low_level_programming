@@ -1,4 +1,4 @@
-# 0x06. C - More pointers, arrays and strings
+# 0x06 - More pointers, arrays and strings
 
 This is a directory containing exercises done as part of the ALX SE program to learn about pointers, arrays and strings in C programming language.
 
