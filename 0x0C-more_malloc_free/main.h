@@ -14,5 +14,10 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 /* Help Functions */
 unsigned int _strlen(char *str);
+void print_exit(char *msg, int code);
+void print_str(char *str);
+int _putchar(char c);
+int all_digit(char *str);
+long int to_num(char *str);
 
 #endif /* MAIN_H */
