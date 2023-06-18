@@ -23,6 +23,7 @@ int main(int ac, char **av)
 		print_exit("0", 0);
 		return (0);
 	}
+
 	res = mul(num1, num2);
 
 	print_exit(res, 0);
