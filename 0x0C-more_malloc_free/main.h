@@ -11,13 +11,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
+char *mul(char *num1, char *num2);
 
 /* Help Functions */
 unsigned int _strlen(char *str);
-void print_exit(char *msg, int code);
-void print_str(char *str);
+int is_num(char *str);
+int str_len(char *str);
+void print_exit(char *str, int code);
 int _putchar(char c);
-int all_digit(char *str);
-long int to_num(char *str);
 
 #endif /* MAIN_H */
