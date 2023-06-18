@@ -16,6 +16,7 @@ char *mul(char *num1, char *num2);
 /* Help Functions */
 unsigned int _strlen(char *str);
 int is_num(char *str);
+int is_zero(char *num);
 int str_len(char *str);
 void print_exit(char *str, int code);
 int _putchar(char c);

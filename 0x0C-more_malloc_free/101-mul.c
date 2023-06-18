@@ -18,6 +18,11 @@ int main(int ac, char **av)
 	if (ac != 3 || is_num(num1) == -1 || is_num(num2) == -1)
 		print_exit("Error", 98);
 
+	if (is_zero(num1) == 0 || is_zero(num2) == 0)
+	{
+		print_exit("0", 0);
+		return (0);
+	}
 	res = mul(num1, num2);
 
 	print_exit(res, 0);
@@ -73,6 +78,22 @@ char *mul(char *num1, char *num2)
 	}
 
 	return (result);
+}
+/**
+ * is_zero - Check if a number is 0 or not.
+ *
+ * @num: Number to check
+ *
+ * Return: 0 if it a zero , 1 if not.
+ */
+int is_zero(char *num)
+{
+	int i;
+
+	for (i = 0; num[i]; i++)
+		if (num[i] != '0')
+			return (1);
+	return (0);
 }
 /**
  * is_num - Check is a string is a number or not
