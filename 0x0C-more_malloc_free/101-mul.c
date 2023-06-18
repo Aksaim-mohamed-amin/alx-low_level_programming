@@ -22,6 +22,8 @@ int main(int ac, char **av)
 
 	print_exit(res, 0);
 
+	free(res);
+
 	return (0);
 }
 /**
