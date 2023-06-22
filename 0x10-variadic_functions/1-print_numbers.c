@@ -3,7 +3,7 @@
 /**
  * print_numbers - Prints numbers and a seperator, followed by a new line.
  *
- * @seperator: Character to seperate numbers with.
+ * @separator: Character to seperate numbers with.
  * @n: Number of numbers.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
