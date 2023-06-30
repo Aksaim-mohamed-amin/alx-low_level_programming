@@ -4,6 +4,7 @@
 /* Libraries */
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /* Structurs */
 /**
@@ -29,5 +30,6 @@ list_t *add_node_end(list_t **head, const char *str);
 void free_list(list_t *head);
 
 /* Help Functions */
+int str_len(const char *str);
 
 #endif /* LISTS_H */
