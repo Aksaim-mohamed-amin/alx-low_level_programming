@@ -1,4 +1,4 @@
-# 0x0E - Structures, typedef
+# 0x0E.C - Structures, typedef
 
 
 This repository contains exercises and code examples related to structures in the C programming language.

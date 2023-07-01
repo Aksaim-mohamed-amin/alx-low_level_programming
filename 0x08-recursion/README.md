@@ -1,4 +1,4 @@
-# 0x08 - Recursion
+# 0x08.C - Recursion
 
 This is a directory containing exercises done as part of the ALX SE program to learn about pointers, arrays and strings in C programming language.
 

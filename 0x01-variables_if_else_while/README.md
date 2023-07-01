@@ -1,4 +1,4 @@
-# 0x01 - Variables, if, else, while
+# 0x01.C - Variables, if, else, while
 
 This folder contains the tasks for learning the basics of variables, control flow statements (if/else), and loops (while) in C programming. The tasks cover topics such as variable types, initializing variables, using conditional statements to control program flow, and looping through code to repeat actions.
 

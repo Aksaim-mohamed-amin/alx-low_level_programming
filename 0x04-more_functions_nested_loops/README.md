@@ -1,4 +1,4 @@
-#  0x04 - More functions and nested loops
+#  0x04.C - More functions and nested loops
 
 This folder contains tasks for learning how to create functions and work with nested loops in C programming. The tasks cover topics such as function declaration, function prototypes, function return types, nested loop structures, and recursion.
 

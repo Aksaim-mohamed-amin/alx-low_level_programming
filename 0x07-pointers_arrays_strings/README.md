@@ -1,4 +1,4 @@
-# 0x07 - Even more pointers, arrays, and strings
+# 0x07.C - Even more pointers, arrays, and strings
 
 This repository contains the solutions to the tasks of project 0x07. C - Even more pointers, arrays, and strings from ALX SE .
 

@@ -1,5 +1,4 @@
-
-# 0x03 Debugging
+# 0x03.C Debugging
 
 This repository contains assignments for learning how to debug programs in C.
 

@@ -1,4 +1,4 @@
-# 0x0A - argc, argv
+# 0x0A.C - argc, argv
 
 This project introduces the concept of command-line arguments in the C programming language. Command-line arguments are a way of passing information into a program from the command line when it is run.
 

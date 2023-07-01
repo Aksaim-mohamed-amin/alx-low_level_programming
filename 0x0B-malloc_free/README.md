@@ -1,4 +1,4 @@
-# 0x0B - malloc, free
+# 0x0B.C - malloc, free
 
 
 This project introduces the concepts of dynamic memory allocation and deallocation in the C programming language using the `malloc` and `free` functions. Dynamic memory allocation allows programs to request memory dynamically at runtime, enabling flexible memory management.

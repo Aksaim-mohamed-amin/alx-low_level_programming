@@ -1,4 +1,4 @@
-# 0x10 - Variadic functions
+# 0x10.C - Variadic functions
 
 This repository contains exercises and code examples related to variadic functions in the C programming language.
 

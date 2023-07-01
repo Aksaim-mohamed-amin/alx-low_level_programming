@@ -1,4 +1,4 @@
-# 0x0C - More malloc, free
+# 0x0C.C - More malloc, free
 
 
 This project builds upon the concepts of dynamic memory allocation and deallocation introduced in the previous project, "0x0B - malloc, free." It covers additional topics related to memory management in the C programming language.

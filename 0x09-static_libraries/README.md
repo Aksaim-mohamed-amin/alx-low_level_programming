@@ -1,4 +1,4 @@
-# 0x09 - Static libraries
+# 0x09.C - Static libraries
 
 
 This project is about creating and using static libraries in the C programming language. In this project, you will learn what a static library is and how to create and use them in your C programs.

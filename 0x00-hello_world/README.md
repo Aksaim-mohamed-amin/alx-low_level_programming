@@ -1,4 +1,4 @@
-# 0x00 - hello, world
+# 0x00.C - hello, world
 
 This folder contains the tasks for learning the basics of the gcc compiler and how to write your first C program.
 The tasks cover topics such as using the functions printf, puts, and putchar to output text to the terminal,
