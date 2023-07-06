@@ -8,13 +8,11 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t num = 0;
 	const listint_t *visited[1024];
+	size_t num = 0, i;
 
-	while (head != NULL && num < 1024)
+	while (head != NULL && num  < 1024)
 	{
-		size_t i;
-
 		for (i = 0; i < num; i++)
 		{
 			if (head == visited[i])
