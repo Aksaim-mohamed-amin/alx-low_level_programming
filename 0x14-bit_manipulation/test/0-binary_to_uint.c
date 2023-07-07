@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * binary_to_uint - Converets a binary to an unsigned int.
+ * binary_to_uint - Converts a binary number to an unsigned int.
  *
- * @b: String that contain a binary number only '0' and '1'.
+ * @b: Pointing to a string of 0 and 1 chars.
  *
- * Return: The converted number or 0 if b is NULL, or there is one
- *         chars in the string b that is not 0 or 1.
+ * Return: The converted number, or 0 if b is NULL,
+ *         or there is one or more chars in the string b that is not 0 or 1.
  */
 unsigned int binary_to_uint(const char *b)
 {
@@ -25,6 +25,14 @@ unsigned int binary_to_uint(const char *b)
 	return (num);
 }
 
+/**
+ * _pow - Calculat the power of x to y.
+ *
+ * @x: Number.
+ * @y: Power of the number.
+ *
+ * Return:  The power of x to y.
+ */
 unsigned int _pow(unsigned int x, unsigned int y)
 {
 	if (y == 0)
