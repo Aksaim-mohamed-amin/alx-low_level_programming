@@ -25,6 +25,14 @@ unsigned int binary_to_uint(const char *b)
 	return (num);
 }
 
+/**
+ * _pow - Calculate the power of x to y.
+ *
+ * @x: Number.
+ * @y: Power.
+ *
+ * Return: The power of x to y.
+ */
 unsigned int _pow(unsigned int x, unsigned int y)
 {
 	if (y == 0)
