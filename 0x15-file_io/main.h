@@ -2,11 +2,14 @@
 #define MAIN_H
 
 /* Libraries */
-#include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <stdio.h>
+#include <elf.h>
 
 /* Macros */
 #define BUFFER_SIZE 1024
