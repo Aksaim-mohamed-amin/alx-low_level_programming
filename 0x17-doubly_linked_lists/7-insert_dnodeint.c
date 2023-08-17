@@ -10,40 +10,35 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *tmp, *new_node;
+	dlistint_t *new_node, *current;
 	unsigned int i = 0;
 
+	/* Check if the node will be added at the begining of the list */
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+
+	/* Travle the node to the index */
+	current = *h;
+	while (current && i < idx - 1)
+	{
+		current = current->next;
+		i++;
+	}
+
+	/* Check if the node will be added at the end of the list */
+	if (current->next == NULL)
+		return (add_dnodeint_end(h, n));
+
+	/* Add the node in idx position */
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 		return (NULL);
 
 	new_node->n = n;
-	new_node->prev = NULL;
-	new_node->next = NULL;
+	new_node->next = current->next;
+	new_node->prev = current;
+	current->next->prev = new_node;
+	current->next = new_node;
 
-	if (idx == 0)
-	{
-		new_node->prev = NULL;
-		if (*h)
-			(*h)->prev = new_node;
-		*h = new_node;
-		return (new_node);
-	}
-
-	tmp = *h;
-	while (tmp && i < idx - 1)
-	{
-		tmp = tmp->next;
-		i++;
-	}
-
-	if (i != idx - 1)
-		return (NULL);
-
-	new_node->prev = tmp;
-	new_node->next = tmp->next;
-	if (tmp->next)
-		tmp->next->prev = new_node;
-	tmp->next = new_node;
 	return (new_node);
 }
