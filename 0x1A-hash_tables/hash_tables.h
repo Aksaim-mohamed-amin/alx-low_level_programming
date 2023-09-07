@@ -4,7 +4,7 @@
 /******* Libraries *******/
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
 
 /******* Structers *******/
 /**
@@ -48,6 +48,8 @@ void hash_table_delete(hash_table_t *ht);
 
 
 /******* Help Funcrtions *******/
-
+int key_update(hash_table_t *ht, const char *key, const char *value,
+	       unsigned long int index);
+hash_node_t *create_item(const char *key, const char *value);
 
 #endif /* HASH_TABLES */
