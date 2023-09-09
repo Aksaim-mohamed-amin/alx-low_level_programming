@@ -173,7 +173,8 @@ int insert_dlist(shash_node_t *new_item, shash_table_t *ht)
 	else
 	{
 		current = ht->shead;
-		while (current->snext != NULL && strcmp(new_item->key, current->snext->key) >= 0)
+		while (current->snext != NULL &&
+		       strcmp(new_item->key, current->snext->key) >= 0)
 			current = current->snext;
 
 		new_item->sprev = current;
@@ -187,6 +188,31 @@ int insert_dlist(shash_node_t *new_item, shash_table_t *ht)
 	}
 
 	return (0);
+}
+
+/**
+ * shash_table_get - Get an item from the sorted hash table.
+ * @ht: Pointer to the sorted hash table.
+ * @key: The key of the item to return.
+ *
+ * Return: The value of the key.
+ */
+char *shash_table_get(const shash_table_t *ht, const char *key)
+{
+	shash_node_t *current;
+
+	if (ht == NULL || ht->shead == NULL)
+		return (NULL);
+
+	current = ht->shead;
+	while (current)
+	{
+		if (strcmp(current->key, key) == 0)
+			return (current->value);
+		current = current->snext;
+	}
+
+	return (NULL);
 }
 
 /**
@@ -240,7 +266,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 }
 
 /**
- * hash_table_delete - Delete a sorted hash table.
+ * shash_table_delete - Delete a sorted hash table.
  * @ht: Pointer to the hash table.
  */
 void shash_table_delete(shash_table_t *ht)
