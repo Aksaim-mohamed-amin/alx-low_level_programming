@@ -1,26 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Print all possibe combinations of two digit numbers
- *        using putchar
+ * main - print the size of each variable
  *
- * Return: Always 0
+ * Return: always 0
  */
-
 int main(void)
 {
-	int i, j;
+	int i, k;
 
-	for (i = 0; i < 99; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (j = i + 1; j < 100; j++)
+		for (k = i + 1; k < 10; k++)
 		{
-			putchar('0' + i / 10);
-			putchar('0' + i % 10);
-			putchar(' ');
-			putchar('0' + j / 10);
-			putchar('0' + j % 10);
-			if (i < 98)
+			putchar(i + '0');
+			putchar(k + '0');
+			if (i < 8)
 			{
 				putchar(',');
 				putchar(' ');
@@ -28,5 +23,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
