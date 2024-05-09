@@ -1,1 +1,1 @@
-0x1E-search_algorithms
+search_algo
