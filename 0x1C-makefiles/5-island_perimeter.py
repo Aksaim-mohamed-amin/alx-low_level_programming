@@ -33,7 +33,7 @@ def check_left(grid, i, j):
 
 def check_botom(grid, i, j):
     """check the value under an area"""
-    if i < len(grid):
+    if i < len(grid) - 1:
         if grid[i + 1][j] == 1:
             return 0
     return 1
@@ -41,7 +41,7 @@ def check_botom(grid, i, j):
 
 def check_right(grid, i, j):
     """check the value right an area"""
-    if j < len(grid[i]):
+    if j < len(grid[i]) - 1:
         if grid[i][j + 1] == 1:
             return 0
     return 1
